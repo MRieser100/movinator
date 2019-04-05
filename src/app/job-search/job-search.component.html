@@ -1,0 +1,18 @@
+<div class="job-search-wrapper">
+  <mat-card>
+    <h3>Search Indeed Jobs</h3>
+    
+    <mat-form-field>
+      <input matInput [(ngModel)]="jobDescription" placeholder="Job Description"/>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="jobLocation" placeholder="Job Location"/>
+    </mat-form-field>
+    
+    <!-- <button (click)="searchJobs(jobDescription.value, jobLocation.value; <clear-values>)" ..></button> -->
+    <div>
+      <button mat-raised-button color="primary" (click)="searchJobs()">Search</button>  
+    </div>
+  </mat-card>
+</div>
